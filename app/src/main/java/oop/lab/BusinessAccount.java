@@ -1,6 +1,6 @@
 package oop.lab;
 
-public class BusinessAccount extends BankAccount{
+public class BusinessAccount extends BankAccount implements OnlineService, LoanService{
     private String loanStatus;
 
     // public BusinessAccount(String number, String name, double moneh) {
@@ -19,6 +19,33 @@ public class BusinessAccount extends BankAccount{
     public void calculateInterest() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'calculateInterest'");
+    }
+
+
+    @Override
+    public void applyForLoan(double amount) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'applyForLoan'");
+    }
+
+
+    @Override
+    public String checkLoanStatus() {
+        return "You currently have this much loan: " + loanStatus;
+    }
+
+
+    @Override
+    public void transferfunds() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'transferfunds'");
+    }
+
+
+    @Override
+    public void payBills(double amount) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'payBills'");
     }
     
 }

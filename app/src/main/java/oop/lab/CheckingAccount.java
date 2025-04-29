@@ -1,6 +1,6 @@
 package oop.lab;
 
-public class CheckingAccount extends BankAccount {
+public class CheckingAccount extends BankAccount implements OnlineService{
 
     public CheckingAccount(String number, String name, double moneh) {
         super(number, name, moneh);
@@ -11,6 +11,18 @@ public class CheckingAccount extends BankAccount {
     public void calculateInterest() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'calculateInterest'");
+    }
+
+    @Override
+    public void transferfunds() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'transferfunds'");
+    }
+
+    @Override
+    public void payBills(double amount) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'payBills'");
     }
     
 }
