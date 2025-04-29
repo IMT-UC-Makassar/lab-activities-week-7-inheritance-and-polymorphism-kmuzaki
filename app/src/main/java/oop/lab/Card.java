@@ -10,7 +10,7 @@ public class Card {
     }
 
     public double getInterestRate(){
-        return double
+        return 0;
     }
     
 }
