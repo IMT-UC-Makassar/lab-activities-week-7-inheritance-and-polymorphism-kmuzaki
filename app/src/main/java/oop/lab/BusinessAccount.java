@@ -10,6 +10,7 @@ public class BusinessAccount extends BankAccount{
 
     public BusinessAccount(String number, String name, double moneh, String loan) {
         super(number, name, moneh);
+        this.loanStatus = loan;
         //TODO Auto-generated constructor stub
     }
 
