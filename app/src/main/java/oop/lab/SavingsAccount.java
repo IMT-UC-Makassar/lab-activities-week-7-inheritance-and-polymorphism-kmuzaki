@@ -13,9 +13,8 @@ public class SavingsAccount extends BankAccount implements OnlineService{
     }
 
     @Override
-    public void transferFunds() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'transferfunds'");
+    public void transferFunds(double tfAmount, String accNumDest) {
+        
     }
 
     @Override

@@ -27,18 +27,16 @@ public class BusinessAccount extends BankAccount implements OnlineService, LoanS
         return "You currently have this much loan: " + loanStatus;
     }
 
-
-    @Override
-    public void transferFunds() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'transferfunds'");
-    }
-
-
     @Override
     public void payBills(double amount) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'payBills'");
+    }
+
+    @Override
+    public void transferFunds(double tfAmmount, String accNumDest) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'transferFunds'");
     }
     
 }

@@ -14,15 +14,15 @@ public class CheckingAccount extends BankAccount implements OnlineService{
     }
 
     @Override
-    public void transferFunds() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'transferfunds'");
-    }
-
-    @Override
     public void payBills(double amount) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'payBills'");
+    }
+
+    @Override
+    public void transferFunds(double tfAmmount, String accNumDest) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'transferFunds'");
     }
     
 }
