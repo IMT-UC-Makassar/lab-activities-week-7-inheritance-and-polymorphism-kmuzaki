@@ -14,7 +14,7 @@ public class CheckingAccount extends BankAccount implements OnlineService{
     }
 
     @Override
-    public void transferfunds() {
+    public void transferFunds() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'transferfunds'");
     }

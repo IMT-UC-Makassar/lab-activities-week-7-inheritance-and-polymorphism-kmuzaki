@@ -3,17 +3,10 @@ package oop.lab;
 public class BusinessAccount extends BankAccount implements OnlineService, LoanService{
     private String loanStatus;
 
-    // public BusinessAccount(String number, String name, double moneh) {
-    //     super(number, name, moneh);
-    //     //TODO Auto-generated constructor stub
-    // }
-
-    public BusinessAccount(String number, String name, double moneh, String loan) {
+    public BusinessAccount(String number, String name, double moneh) {
         super(number, name, moneh);
-        this.loanStatus = loan;
         //TODO Auto-generated constructor stub
     }
-
 
     @Override
     public void calculateInterest() {
@@ -36,7 +29,7 @@ public class BusinessAccount extends BankAccount implements OnlineService, LoanS
 
 
     @Override
-    public void transferfunds() {
+    public void transferFunds() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'transferfunds'");
     }
