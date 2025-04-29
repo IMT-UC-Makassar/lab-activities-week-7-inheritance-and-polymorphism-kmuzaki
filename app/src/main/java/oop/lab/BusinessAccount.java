@@ -20,13 +20,5 @@ public class BusinessAccount extends BankAccount{
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'calculateInterest'");
     }
-
-    public void applyForLoan(double amount){
-
-    }
-
-    public String checkLoanStatus(){
-        return "You have " + loanStatus + " for loans";
-    }
     
 }
