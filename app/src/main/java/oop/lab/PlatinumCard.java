@@ -9,6 +9,6 @@ public class PlatinumCard extends CreditCard{
     
     @Override
     public double getInterestRate(){
-        return 0;
+        return 10;
     }
 }

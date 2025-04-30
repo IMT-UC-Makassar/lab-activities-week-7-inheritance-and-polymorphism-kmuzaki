@@ -9,7 +9,7 @@ public class CreditCard extends Card{
 
     @Override
     public double getInterestRate(){
-        return 0;
+        return 15;
     }
     
 }

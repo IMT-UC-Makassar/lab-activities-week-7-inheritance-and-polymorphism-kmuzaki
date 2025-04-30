@@ -9,7 +9,7 @@ public class DebitCard extends Card {
 
     @Override
     public double getInterestRate() {
-        return 2;
+        return 0;
     }
     
 }
