@@ -10,13 +10,13 @@ public class CheckingAccount extends BankAccount implements OnlineService{
     @Override
     public void calculateInterest() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'calculateInterest'");
+        deposit(getBalance() * 0);
     }
 
     @Override
     public void payBills(double amount) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'payBills'");
+        withdraw(amount);
     }
 
     @Override

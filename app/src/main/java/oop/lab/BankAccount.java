@@ -17,12 +17,12 @@ public abstract class BankAccount {
     }
 
     public void withdraw(double amount){
-        try {
+        if (amount > this.balance) {
+            throw new IllegalArgumentException("Insufficient funds");
+        } else {
             this.balance -= amount;
-        } catch (Exception e) {
-            System.out.println("Insufficient funds");
+            System.out.println("Withdraw successful");
         }
-        
         
     }
 

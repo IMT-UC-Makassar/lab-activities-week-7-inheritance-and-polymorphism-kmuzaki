@@ -10,21 +10,19 @@ public class BusinessAccount extends BankAccount implements OnlineService, LoanS
 
     @Override
     public void calculateInterest() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'calculateInterest'");
+        deposit(getBalance() * 0.25);
     }
 
 
     @Override
     public void applyForLoan(double amount) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'applyForLoan'");
+        this.loanStatus = "Pending";
     }
 
 
     @Override
     public String checkLoanStatus() {
-        return "You currently have this much loan: " + loanStatus;
+        return loanStatus;
     }
 
     @Override
